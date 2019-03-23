@@ -53,3 +53,14 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
+          
+  deploy-job:
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "5f:6d:38:15:0c:9d:50:0d:2b:07:1d:3d:6f:cc:e6:be"
+      - run:
+        name: deploy data
+        command:
+          ls
+          git status
