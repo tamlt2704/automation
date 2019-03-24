@@ -38,6 +38,7 @@ jobs:
             pip install -r requirements.txt
             ls
             git status
+            git push origin master
 
       - save_cache:
           paths:
