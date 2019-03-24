@@ -38,6 +38,8 @@ jobs:
             pip install -r requirements.txt
             python vcb.py
             ls
+            git config --global user.email "tamlt2704@gmail.com"
+            git config --global user.name "tamlt2704"
             git add data
             git commit -m 'update data'
             git push origin master
