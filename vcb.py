@@ -29,5 +29,5 @@ df['date'] = date
 df['date'] = pd.to_datetime(df['date'])
 dt = str(df['date'].iloc[0])[:10]
 filepath = "{}/{}.csv".format(data_folder, dt)
-df.to_csv(filepath)
+df.to_csv(filepath, index=False)
 print("save", df.shape[0], "rows to ", data_folder)
