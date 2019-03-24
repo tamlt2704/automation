@@ -62,3 +62,12 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
+nightly:
+    triggers:
+      - schedule:
+          cron: "* * * * *"
+          filters:
+            branches:
+              only:
+                - master
+                - beta
