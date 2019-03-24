@@ -37,7 +37,8 @@ jobs:
             . venv/bin/activate
             pip install -r requirements.txt
             ls
-            git status
+            git add data
+            git commit -m 'update data'
             git push origin master
 
       - save_cache:
